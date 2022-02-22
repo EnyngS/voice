@@ -109,12 +109,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .head__logo {
   color: red;
-  height: 20vh;
+  height: 15vh;
   background: url(../img/voice_logo.jpg) center/contain no-repeat;
 }
 
 .head__main {
-  min-height: 100vh;
+  min-height: 85vh;
   width: 100%;
   background: url(../img/bg_main.jpg) center/cover no-repeat fixed;
   display: -webkit-box;

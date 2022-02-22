@@ -51,13 +51,13 @@ $maxWidth: 1920;
 
 	&__logo {
 		color: red;
-		height: 20vh;
+		height: 15vh;
 		background: url(../img/voice_logo.jpg) center/contain no-repeat ;
 		// min-height: 100vh;
 		// max-height: 20%;
 	}
 	&__main {
-		min-height: 100vh;
+		min-height: 85vh;
 	width: 100%;
 		background: url(../img/bg_main.jpg) center/cover no-repeat fixed;
 	
