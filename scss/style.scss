@@ -11,6 +11,17 @@ $maxWidth: 1920;
 * {
 	font-family: 'Open Sans', sans-serif;
 }
+html{
+	overflow: hidden;
+	height: 100%;    
+}
+body{
+	overflow: auto;
+	height: 100%;
+}
+// html {
+// 	// background: #f0f0f0;
+// }
 // Переменные для блока
 
 // .head__main {
