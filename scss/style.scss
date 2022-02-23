@@ -43,7 +43,7 @@ body{
 	padding: 10px 20px 10px 10px;
 	color: #2FA1DD ;
 	// text-decoration: underline;
-	margin-top: 15px;
+	margin-top: 25px;
 	margin-right: -10px;
 	
 	display: flex;
@@ -51,6 +51,26 @@ body{
 	border-radius: 2em;
 	width:max-content;
 	// transition: transform 2s;
+	background-color: #2FA1DD ;
+	p,i {
+		color: white;
+		
+		// transform: rotate(0.5turn);
+	}
+	i{
+		animation: 2s ease-in-out 0s normal none infinite running rot;
+		@keyframes rot {
+			0% {
+			  transform: rotate(0deg);
+			}
+			50% {
+			  transform: rotate(30deg);
+			}
+			100% {
+			  transform: rotate(0deg);
+			}
+		 }
+	}
 	
 	&:hover {
 		background-color: #2FA1DD ;
@@ -77,7 +97,7 @@ body{
 		
 	}
 	p {
-		text-decoration: underline;
+		// text-decoration: underline;
 	}
 	&:visited {
 		color: #2FA1DD ;
@@ -196,7 +216,20 @@ justify-content: space-between;
 	&__img {
 		flex: 1 1 40%;
 		min-width: 35%;
-		background: url(../img/face.jpg) center/cover no-repeat ;
+		// background: url(../img/face.jpg) center/cover no-repeat ;
+		overflow: hidden;
+		transition: all .5s ease-in;
+		&-contant {
+			width: 100%;
+			height: 100%;
+			background: url(../img/face.jpg) center/cover no-repeat ;
+			transition: all .5s ease-in;
+			&:hover {
+				transform: scale(1.1);
+				transition: all .5s ease-in;
+				overflow: hidden;
+			}
+		}
 
 	}
 }
@@ -228,17 +261,23 @@ padding: 5% ;
 justify-content: space-between;
 border-bottom: 1px solid #5E5E5E ;
 	&__img {
-		// position: relative;
+		position: relative;
 		flex: 1 1 30%;
 		min-width: 35%;
-		background: url(../img/micro.jpg) center/cover no-repeat ;
 		overflow: hidden;
 		transition: all .5s ease-in;
-		&:hover {
-			transform: scale(1.2);
+		&-contant {
+			width: 100%;
+			height: 100%;
+			background: url(../img/micro.jpg) center/cover no-repeat ;
 			transition: all .5s ease-in;
-			overflow: hidden;
+			&:hover {
+				transform: scale(1.1);
+				transition: all .5s ease-in;
+				overflow: hidden;
+			}
 		}
+		
 	}
 
 	&__text {
@@ -342,7 +381,7 @@ border-bottom: 1px solid #5E5E5E ;
 	}
 	.tg {
 		justify-content: center;
-		margin: 0 auto;
+		margin: 15px auto;
 	}
 	.voice {
 		display: flex;
