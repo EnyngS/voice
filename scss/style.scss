@@ -257,6 +257,30 @@ padding: 5% ;
 	width: 100%;
 justify-content: space-between;
 border-bottom: 1px solid #5E5E5E ;
+position: relative;
+&__string {
+	position: absolute;
+	color:white;
+	top: 2%;
+	text-align: center;
+	// height: 100%;
+	width: 100%;
+	@include adaptiv-font(36, 14);
+// 	&:hover {
+// .gift__img {
+// 	position: relative;
+// 		transition: all .5s ease-in;
+// 		&-contant {
+// 			transition: all .5s ease-in;
+// 			&:hover {
+// 				transform: scale(1.1);
+// 				transition: all .5s ease-in;
+// 				overflow: hidden;
+// 			}
+// 		}
+// }
+// 	}
+}
 	&__img {
 		position: relative;
 		flex: 1 1 30%;
@@ -268,6 +292,7 @@ border-bottom: 1px solid #5E5E5E ;
 			height: 100%;
 			background: url(../img/micro.jpg) center/cover no-repeat ;
 			transition: all .5s ease-in;
+
 			&:hover {
 				transform: scale(1.1);
 				transition: all .5s ease-in;
@@ -313,6 +338,7 @@ border-bottom: 1px solid #5E5E5E ;
 	&__column {
 		display: flex;
 		justify-content: space-around;
+		flex: 1 1 auto;
 	}
 	a {
 		max-height: 100px;
@@ -382,47 +408,47 @@ border-bottom: 1px solid #5E5E5E ;
 		justify-content: center;
 		margin: 15px auto;
 	}
-	.voice {
-		display: flex;
-		width: 100%;
-	justify-content: space-between;
-	background: url(../img/face.jpg) center/cover no-repeat ;
-		&__text {
-			color: white;
-			// flex: 1 1 auto;
-			// padding: 3% 5% 
-		}
+	// .voice {
+	// 	display: flex;
+	// 	width: 100%;
+	// justify-content: space-between;
+	// // background: url(../img/face.jpg) center/cover no-repeat ;
+	// 	&__text {
+	// 		color: white;
+	// 		// flex: 1 1 auto;
+	// 		// padding: 3% 5% 
+	// 	}
 	
-		&__string {
-			position: relative;
-			// color: #5E5E5E;
-			color: white;
-			@include adaptiv-font(40, 20);
-			padding: 5% 0;
-		}
+	// 	&__string {
+	// 		position: relative;
+	// 		// color: #5E5E5E;
+	// 		color: white;
+	// 		@include adaptiv-font(40, 20);
+	// 		padding: 5% 0;
+	// 	}
 	
-		&__img {
-			display: none;
-			flex: 1 1 40%;
-			min-width: 35%;
-			background: url(../img/face.jpg) center/cover no-repeat ;
+	// 	&__img {
+	// 		// display: none;
+	// 		flex: 1 1 40%;
+	// 		min-width: 35%;
+	// 		background: url(../img/face.jpg) center/cover no-repeat ;
 	
-		}
-		position: relative;
-	order: 10;
-	z-index: 1;
-	&::before {
-		content: "";
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		position: absolute;
-		background: black;
-		opacity: 0.35;
-		order: 5;
-	}
-	}
+	// 	}
+	// 	position: relative;
+	// order: 10;
+	// z-index: 1;
+	// &::before {
+	// 	content: "";
+	// 	top: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	position: absolute;
+	// 	background: black;
+	// 	opacity: 0.35;
+	// 	order: 5;
+	// }
+	// }
 	.gift {
 		display: flex;
 		width: 100%;
@@ -447,23 +473,23 @@ border-bottom: 1px solid #5E5E5E ;
 			text-align: center;
 		}
 	
-		&__title {
-			@include adaptiv-font(58, 24);
-			font-weight: bold;
-		}
-		&__desc {
-			@include adaptiv-font(50, 20);
+		// &__title {
+		// 	@include adaptiv-font(58, 24);
+		// 	font-weight: bold;
+		// }
+		// &__desc {
+		// 	@include adaptiv-font(50, 20);
 			
-			// font-weight: bold;
-			padding: 10% 0;
-		}
+		// 	// font-weight: bold;
+		// 	padding: 10% 0;
+		// }
 	
-		&__connect {
-			@include adaptiv-font(40, 20);
+		// &__connect {
+		// 	@include adaptiv-font(40, 20);
 			
 			
 			
-		}
+		// }
 		position: relative;
 	order: 10;
 	z-index: 1;
@@ -478,6 +504,10 @@ border-bottom: 1px solid #5E5E5E ;
 		opacity: 0.35;
 		order: 5;
 	}
+	}
+	.footer {
+		flex-direction: column;
+		max-height: 200px;
 	}
 }
 
