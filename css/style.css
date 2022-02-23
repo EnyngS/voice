@@ -452,7 +452,7 @@ body {
     min-height: 85vh;
   }
   .head__logo {
-    height: 10vh;
+    height: 15vh;
   }
   .head__main {
     text-align: center;
@@ -462,7 +462,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 10px;
-    min-height: 80vh;
+    background: url(../img/bg_main.jpg) center/cover no-repeat;
   }
   .head__free {
     position: relative;
