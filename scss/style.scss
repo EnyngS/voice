@@ -1,13 +1,12 @@
 // Файл обнуляющих стилей
 @import "_nullstyle";
 
-$maxWidth: 1940;
+$maxWidth: 1920;
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 @font-face {
 	font-family: 'h';
@@ -35,24 +34,6 @@ body{
 	overflow: auto;
 	height: 100%;
 }
-// html {
-// 	// background: #f0f0f0;
-// }
-// Переменные для блока
-
-// .head__main {
-// 	background: url(../img/bg_main.jpg) center/cover no-repeat fixed;
-// 	min-height: 100vh;
-// 	min-width: 100%;
-// 	display: flex;
-// 	flex-direction: column;
-// 	color: white;
-// 	padding: 10px 30px;
-// 	justify-content: space-between;
-// 	font-size: 20px;
-// 	@include adaptiv-font(30, 14);
-	
-// }
 
 .tg {
 	font-weight: bold;
@@ -87,31 +68,6 @@ body{
 		 }
 	}
 	
-	// &:hover {
-	// 	background-color: #2FA1DD ;
-	// 	// display: inline-block;
-	// 	p,i {
-	// 		color: white;
-			
-	// 		// transform: rotate(0.5turn);
-	// 	}
-	// 	i{
-	// 		animation: 2s ease-in-out 0s normal none infinite running rot;
-	// 		@keyframes rot {
-	// 			0% {
-	// 			  transform: rotate(0deg);
-	// 			}
-	// 			50% {
-	// 			  transform: rotate(30deg);
-	// 			}
-	// 			100% {
-	// 			  transform: rotate(0deg);
-	// 			}
-	// 		 }
-	// 	}
-		
-	// }
-	 
 	&:visited {
 		color: #2FA1DD ;
 	}
@@ -128,8 +84,7 @@ body{
 		
 		height: 15vh;
 		background: url(../img/voice_logo.jpg) center/contain no-repeat ;
-		// min-height: 100vh;
-		// max-height: 20%;
+
 	}
 	&__main {
 		min-height: 85vh;
@@ -161,7 +116,6 @@ body{
 
 	&__free {
 		position: relative;
-		// padding-left: 30px;
 		padding: 10px 0 10px 35px ;
 		&::before {
 			content: '';
@@ -172,7 +126,7 @@ body{
 			width: 23px;
 			left: 0;
 			top: 25%;
-			// margin-left: -10px;
+		
 		}
 		font-style: bold;
 		max-width: 50%;
@@ -194,20 +148,6 @@ body{
 	&__connect {
 		position: relative;
 		max-width: 50%;
-		
-		// a {
-		// 	font-weight: bold;
-		// 	padding: 10px 0;
-		// 	color: #2FA1DD ;
-		// 	text-decoration: underline;
-		// 	&:visited {
-		// 		color: #2FA1DD ;
-		// 	}
-		// 	i {
-		// 		padding: 20px 10px;
-		// 		font-size: 60px;
-		// 	}
-		// }
 	}
 }
 
@@ -229,7 +169,6 @@ justify-content: space-between;
 	&__img {
 		flex: 1 1 40%;
 		min-width: 35%;
-		// background: url(../img/face.jpg) center/cover no-repeat ;
 		overflow: hidden;
 		transition: all .5s ease-in;
 		&-contant {
@@ -279,23 +218,8 @@ position: relative;
 	color:white;
 	top: 2%;
 	text-align: center;
-	// height: 100%;
 	width: 100%;
 	@include adaptiv-font(36, 14);
-// 	&:hover {
-// .gift__img {
-// 	position: relative;
-// 		transition: all .5s ease-in;
-// 		&-contant {
-// 			transition: all .5s ease-in;
-// 			&:hover {
-// 				transform: scale(1.1);
-// 				transition: all .5s ease-in;
-// 				overflow: hidden;
-// 			}
-// 		}
-// }
-// 	}
 }
 	&__img {
 		position: relative;
@@ -335,7 +259,6 @@ position: relative;
 	}
 	&__desc {
 		@include adaptiv-font(50, 20);
-		// font-weight: bold;
 		padding: 10% 0;
 	}
 
@@ -360,7 +283,6 @@ position: relative;
 		max-height: 100px;
 	}
 	img {
-		// height: 20vh;
 		max-width: 100%;
 		max-height: 100%;
 		object-fit: contain;
@@ -376,15 +298,12 @@ position: relative;
 		&__main {
 			text-align: center;
 			margin: 0 auto;
-			// justify-content: center;
 			align-items: center;
 			padding: 20px 10px;
-			// min-height: 100%;
 			background: url(../img/bg_main.jpg) center/cover no-repeat ;
 		}
 		&__free {
 			position: relative;
-			// padding-left: 30px;
 			padding: 10px 0 10px 35px ;
 			max-width: 100%;
 		}
@@ -404,20 +323,6 @@ position: relative;
 		&__connect {
 			position: relative;
 			max-width: 100%;
-			// text-align: center;
-			// a {
-			// 	font-weight: bold;
-			// 	padding: 10px 0;
-			// 	color: #2FA1DD ;
-			// 	text-decoration: underline;
-			// 	&:visited {
-			// 		color: #2FA1DD ;
-			// 	}
-			// 	i {
-			// 		padding: 20px 10px;
-			// 		font-size: 60px;
-			// 	}
-			// }
 		}
 	}
 	.tg {
@@ -485,7 +390,6 @@ transform: none;
 		}
 	
 		&__text {
-			// flex: 1 1 60%;
 			padding: 20px 5% ;
 			color: white;
 			position: relative;
@@ -496,23 +400,6 @@ transform: none;
 			text-align: center;
 		}
 	
-		// &__title {
-		// 	@include adaptiv-font(58, 24);
-		// 	font-weight: bold;
-		// }
-		// &__desc {
-		// 	@include adaptiv-font(50, 20);
-			
-		// 	// font-weight: bold;
-		// 	padding: 10% 0;
-		// }
-	
-		// &__connect {
-		// 	@include adaptiv-font(40, 20);
-			
-			
-			
-		// }
 		position: relative;
 	order: 10;
 	z-index: 1;
