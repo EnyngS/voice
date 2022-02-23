@@ -7,9 +7,25 @@ $maxWidth: 1920;
 	$maxWidth: $maxWidth - 320;
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@font-face {
+	font-family: 'h';
+	src: url('../fonts/hb.eot');
+	src: local('☺'), url('../fonts/hb.woff') format('woff'), url('../fonts/hb.ttf') format('truetype'), url('../fonts/hb.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'h';
+	src: url('../fonts/hr.eot');
+	src: local('☺'), url('../fonts/hr.woff') format('woff'), url('../fonts/hr.ttf') format('truetype'), url('../fonts/hr.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'h', sans-serif;
 }
 html{
 	overflow: hidden;
