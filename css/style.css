@@ -312,14 +312,16 @@ body {
   transition: all .5s ease-in;
 }
 
-.voice__img-contant:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  transition: all .5s ease-in;
-  overflow: hidden;
+@media screen and (min-width: 767px) {
+  .voice__img-contant:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    overflow: hidden;
+  }
 }
 
 .wait {
@@ -521,11 +523,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 15px auto;
-  }
-  .voice__img:hover {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
   }
   .gift {
     display: -webkit-box;
