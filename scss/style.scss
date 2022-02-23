@@ -1,7 +1,7 @@
 // Файл обнуляющих стилей
 @import "_nullstyle";
 
-$maxWidth: 1920;
+$maxWidth: 1940;
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
