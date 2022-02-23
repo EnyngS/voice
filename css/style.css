@@ -462,7 +462,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 10px;
-    background: url(../img/bg_main.jpg) center/cover no-repeat;
+    background: url(../img/bg_main.jpg) center/cover no-repeat fixed;
   }
   .head__free {
     position: relative;
