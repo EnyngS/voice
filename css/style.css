@@ -90,8 +90,10 @@ body {
 
 .tg {
   font-weight: bold;
-  padding: 10px 0;
+  padding: 10px 20px 10px 10px;
   color: #2FA1DD;
+  margin-top: 15px;
+  margin-right: -10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -100,6 +102,54 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-border-radius: 2em;
+          border-radius: 2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.tg:hover {
+  background-color: #2FA1DD;
+}
+
+.tg:hover p, .tg:hover i {
+  color: white;
+}
+
+.tg:hover i {
+  -webkit-animation: 2s ease-in-out 0s normal none infinite running rot;
+          animation: 2s ease-in-out 0s normal none infinite running rot;
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .tg p {
@@ -113,8 +163,8 @@ body {
 .tg i {
   padding: 1%;
   text-decoration: none;
-  font-size: -webkit-calc(32px + 32 * ((100vw - 320px) / 1600));
-  font-size: calc(32px + 32 * ((100vw - 320px) / 1600));
+  font-size: -webkit-calc(34px + 30 * ((100vw - 320px) / 1600));
+  font-size: calc(34px + 30 * ((100vw - 320px) / 1600));
 }
 
 .head__logo {
@@ -285,6 +335,20 @@ body {
           flex: 1 1 30%;
   min-width: 35%;
   background: url(../img/micro.jpg) center/cover no-repeat;
+  overflow: hidden;
+  -webkit-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.gift__img:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  overflow: hidden;
 }
 
 .gift__text {
@@ -402,6 +466,7 @@ body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0 auto;
   }
   .voice {
     display: -webkit-box;
