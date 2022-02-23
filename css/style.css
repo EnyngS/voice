@@ -149,34 +149,6 @@ body {
   }
 }
 
-.tg:hover {
-  background-color: #2FA1DD;
-}
-
-.tg:hover p, .tg:hover i {
-  color: white;
-}
-
-.tg:hover i {
-  -webkit-animation: 2s ease-in-out 0s normal none infinite running rot;
-          animation: 2s ease-in-out 0s normal none infinite running rot;
-}
-
-@keyframes rot {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
 .tg:visited {
   color: #2FA1DD;
 }

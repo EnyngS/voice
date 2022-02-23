@@ -42,7 +42,6 @@ body{
 	font-weight: bold;
 	padding: 10px 20px 10px 10px;
 	color: #2FA1DD ;
-	// text-decoration: underline;
 	margin-top: 25px;
 	margin-right: -10px;
 	
@@ -72,30 +71,30 @@ body{
 		 }
 	}
 	
-	&:hover {
-		background-color: #2FA1DD ;
-		// display: inline-block;
-		p,i {
-			color: white;
+	// &:hover {
+	// 	background-color: #2FA1DD ;
+	// 	// display: inline-block;
+	// 	p,i {
+	// 		color: white;
 			
-			// transform: rotate(0.5turn);
-		}
-		i{
-			animation: 2s ease-in-out 0s normal none infinite running rot;
-			@keyframes rot {
-				0% {
-				  transform: rotate(0deg);
-				}
-				50% {
-				  transform: rotate(30deg);
-				}
-				100% {
-				  transform: rotate(0deg);
-				}
-			 }
-		}
+	// 		// transform: rotate(0.5turn);
+	// 	}
+	// 	i{
+	// 		animation: 2s ease-in-out 0s normal none infinite running rot;
+	// 		@keyframes rot {
+	// 			0% {
+	// 			  transform: rotate(0deg);
+	// 			}
+	// 			50% {
+	// 			  transform: rotate(30deg);
+	// 			}
+	// 			100% {
+	// 			  transform: rotate(0deg);
+	// 			}
+	// 		 }
+	// 	}
 		
-	}
+	// }
 	 
 	&:visited {
 		color: #2FA1DD ;
