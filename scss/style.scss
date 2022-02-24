@@ -1,7 +1,7 @@
 // Файл обнуляющих стилей
 @import "_nullstyle";
 
-$maxWidth: 1920;
+$maxWidth: 2500;
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
@@ -33,6 +33,12 @@ html{
 body{
 	overflow: auto;
 	height: 100%;
+	
+}
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+
 }
 
 .tg {
@@ -213,6 +219,7 @@ padding: 5% ;
 	display: flex;
 	width: 100%;
 justify-content: space-between;
+
 border-bottom: 1px solid #5E5E5E ;
 position: relative;
 &__string {
@@ -222,6 +229,7 @@ position: relative;
 	text-align: center;
 	width: 100%;
 	@include adaptiv-font(36, 14);
+	
 }
 	&__img {
 		position: relative;
@@ -249,7 +257,7 @@ position: relative;
 		padding: 3% 5% ;
 		color: #5E5E5E;
 		
-		padding: 2% 3%;
+		padding: 5% 3%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between
