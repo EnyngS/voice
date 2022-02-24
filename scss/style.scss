@@ -26,15 +26,15 @@ $maxWidth: 2500;
 * {
 	font-family: 'h', sans-serif;
 }
-html{
-	overflow: hidden;
-	height: 100%;    
-}
-body{
-	overflow: auto;
-	height: 100%;
+// html{
+// 	overflow: hidden;
+// 	height: 100%;    
+// }
+// body{
+// 	overflow: auto;
+// 	height: 100%;
 	
-}
+// }
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -186,7 +186,7 @@ justify-content: space-between;
 				@media screen and (min-width: 767px) {
 				transform: scale(1.1);
 				transition: all .5s ease-in;
-				overflow: hidden;
+				// overflow: hidden;
 				}
 			}
 		}
@@ -246,7 +246,7 @@ position: relative;
 			&:hover {
 				transform: scale(1.1);
 				transition: all .5s ease-in;
-				overflow: hidden;
+				// overflow: hidden;
 			}
 		}
 		
@@ -302,22 +302,24 @@ position: relative;
 	.head {
 			
 		&__logo {
-		
-			height: 15vh;
+		height: 100px;
+			// height: 15vh;
 		}
 		&__main {
 			text-align: center;
 			margin: 0 auto;
 			align-items: center;
 			padding: 20px 10px;
-			background: url(../img/bg_main.jpg) center/cover no-repeat ;
+			background-attachment: scroll;
+			height: auto;
+			// background: url(../img/bg_main.jpg) center/cover no-repeat ;
 		}
 		&__free {
 			position: relative;
 			padding: 10px 0 10px 35px ;
 			max-width: 100%;
 		}
-	min-height: 85vh;
+	// min-height: 85vh;
 		&__motto {
 			@include adaptiv-font(66,34);
 			font-weight: bold;

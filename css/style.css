@@ -93,16 +93,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'h', sans-serif;
 }
 
-html {
-  overflow: hidden;
-  height: 100%;
-}
-
-body {
-  overflow: auto;
-  height: 100%;
-}
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -325,7 +315,6 @@ body {
     -webkit-transition: all .5s ease-in;
     -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
-    overflow: hidden;
   }
 }
 
@@ -405,7 +394,6 @@ body {
   -webkit-transition: all .5s ease-in;
   -o-transition: all .5s ease-in;
   transition: all .5s ease-in;
-  overflow: hidden;
 }
 
 .gift__text {
@@ -485,11 +473,8 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .head {
-    min-height: 85vh;
-  }
   .head__logo {
-    height: 15vh;
+    height: 100px;
   }
   .head__main {
     text-align: center;
@@ -499,7 +484,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 10px;
-    background: url(../img/bg_main.jpg) center/cover no-repeat;
+    background-attachment: scroll;
+    height: auto;
   }
   .head__free {
     position: relative;
