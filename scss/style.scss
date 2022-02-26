@@ -346,11 +346,16 @@ position: relative;
 	}
 .visible { 
 	display: block;
-	padding: 3% 5%;
+	padding: 2% 5% 0;
 	width: 100%;
+	.voice__string {
+padding: 3% 0;
+	}
 }
 	.voice {
-		// &__text {
+		&__text { 
+			padding-bottom: 0;
+		}
 // &__img {
 // 	&-contant {
 // 		// background-size: contain;

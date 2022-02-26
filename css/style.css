@@ -521,8 +521,14 @@ h1, h2, h3, h4, h5, h6 {
   }
   .visible {
     display: block;
-    padding: 3% 5%;
+    padding: 2% 5% 0;
     width: 100%;
+  }
+  .visible .voice__string {
+    padding: 3% 0;
+  }
+  .voice__text {
+    padding-bottom: 0;
   }
   .voice__string:nth-of-type(4), .voice__string:nth-child(5) {
     display: none;
