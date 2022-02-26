@@ -318,6 +318,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.visible {
+  display: none;
+}
+
 .wait {
   margin: 0 auto;
   color: #5E5E5E;
@@ -514,6 +518,14 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 15px auto;
+  }
+  .visible {
+    display: block;
+    padding: 3% 5%;
+    width: 100%;
+  }
+  .voice__string:nth-of-type(4), .voice__string:nth-child(5) {
+    display: none;
   }
   .gift {
     display: -webkit-box;

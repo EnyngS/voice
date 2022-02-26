@@ -193,6 +193,9 @@ justify-content: space-between;
 
 	}
 }
+.visible {
+	display: none;
+}
 
 .wait {
 	margin: 0 auto;
@@ -319,7 +322,7 @@ position: relative;
 			padding: 10px 0 10px 35px ;
 			max-width: 100%;
 		}
-	// min-height: 85vh;
+	// min-height: auto;
 		&__motto {
 			@include adaptiv-font(66,34);
 			font-weight: bold;
@@ -341,7 +344,26 @@ position: relative;
 		justify-content: center;
 		margin: 15px auto;
 	}
-
+.visible { 
+	display: block;
+	padding: 3% 5%;
+	width: 100%;
+}
+	.voice {
+		// &__text {
+&__img {
+	&-contant {
+		// background-size: contain;
+	}
+}
+			
+		// }
+		&__string {
+			&:nth-of-type(4), &:nth-child(5) {
+				display: none;
+			}
+		}
+	}
 	// .voice {
 	// 	display: flex;
 	// 	width: 100%;
