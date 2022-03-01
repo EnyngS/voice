@@ -275,7 +275,7 @@ position: relative;
 	}
 	&__desc {
 		@include adaptiv-font(50, 19);
-		padding: 10% 0%;
+		padding: 10% 0;
 	}
 
 	&__connect {
@@ -439,7 +439,7 @@ padding: 3% 0;
 		}
 	
 		&__text {
-			padding: 20px 2% ;
+			
 			color: white;
 			position: relative;
 			padding: 2% 3%;

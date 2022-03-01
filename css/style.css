@@ -441,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
 .gift__desc {
   font-size: -webkit-calc(19px + 31 * ((100vw - 320px) / 2180));
   font-size: calc(19px + 31 * ((100vw - 320px) / 2180));
-  padding: 10% 0%;
+  padding: 10% 0;
 }
 
 .gift__connect {
@@ -580,7 +580,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .gift__text {
-    padding: 20px 2%;
     color: white;
     position: relative;
     padding: 2% 3%;
