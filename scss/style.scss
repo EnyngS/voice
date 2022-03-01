@@ -161,6 +161,7 @@ $maxWidth: 2500;
 	display: flex;
 	width: 100%;
 justify-content: space-between;
+hyphens: auto;
 	&__text {
 		flex: 1 1 auto;
 		padding: 3% 5% 
@@ -170,6 +171,7 @@ justify-content: space-between;
 		color: #5E5E5E;
 		@include adaptiv-font(40, 16);
 		padding: 5% 0;
+		hyphens: auto;
 	}
 
 	&__img {
@@ -195,6 +197,7 @@ justify-content: space-between;
 }
 .visible {
 	display: none;
+	hyphens: auto;
 }
 
 .wait {
@@ -271,8 +274,8 @@ position: relative;
 		font-weight: bold;
 	}
 	&__desc {
-		@include adaptiv-font(50, 20);
-		padding: 10% 2%;
+		@include adaptiv-font(50, 19);
+		padding: 10% 0%;
 	}
 
 	&__connect {
@@ -301,7 +304,16 @@ position: relative;
 		object-fit: contain;
 	}
 }
+
+.br {
+	display: none;
+}
+@media screen and (max-width: 500px) {
+	.br {
+		display: block;
+	}}
 @media screen and (max-width: 767px) {
+	
 	.head {
 			
 		&__logo {
@@ -427,7 +439,7 @@ padding: 3% 0;
 		}
 	
 		&__text {
-			padding: 20px 5% ;
+			padding: 20px 2% ;
 			color: white;
 			position: relative;
 			padding: 2% 3%;
@@ -455,6 +467,15 @@ padding: 3% 0;
 	.footer {
 		flex-direction: column;
 		max-height: 200px;
+		&__logo {
+			display: block;
+		height: 10vh;
+		background: url(../img/voice_logo.jpg) center/contain no-repeat ;
+	
+	}
+	&__column {
+		display: none;
+	}
 	}
 }
 

@@ -269,6 +269,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .voice__text {
@@ -284,6 +287,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: -webkit-calc(16px + 24 * ((100vw - 320px) / 2180));
   font-size: calc(16px + 24 * ((100vw - 320px) / 2180));
   padding: 5% 0;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .voice__img {
@@ -320,6 +326,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .visible {
   display: none;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .wait {
@@ -430,9 +439,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gift__desc {
-  font-size: -webkit-calc(20px + 30 * ((100vw - 320px) / 2180));
-  font-size: calc(20px + 30 * ((100vw - 320px) / 2180));
-  padding: 10% 2%;
+  font-size: -webkit-calc(19px + 31 * ((100vw - 320px) / 2180));
+  font-size: calc(19px + 31 * ((100vw - 320px) / 2180));
+  padding: 10% 0%;
 }
 
 .gift__connect {
@@ -474,6 +483,16 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.br {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .br {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -561,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .gift__text {
-    padding: 20px 5%;
+    padding: 20px 2%;
     color: white;
     position: relative;
     padding: 2% 3%;
@@ -601,5 +620,13 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     max-height: 200px;
+  }
+  .footer__logo {
+    display: block;
+    height: 10vh;
+    background: url(../img/voice_logo.jpg) center/contain no-repeat;
+  }
+  .footer__column {
+    display: none;
   }
 }
