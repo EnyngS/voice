@@ -195,8 +195,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 20px;
-  font-size: -webkit-calc(24px + 16 * ((100vw - 320px) / 2180));
-  font-size: calc(24px + 16 * ((100vw - 320px) / 2180));
+  font-size: -webkit-calc(19px + 21 * ((100vw - 320px) / 2180));
+  font-size: calc(19px + 21 * ((100vw - 320px) / 2180));
   position: relative;
   -webkit-box-ordinal-group: 11;
   -webkit-order: 10;
