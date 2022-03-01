@@ -445,8 +445,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gift__connect {
-  font-size: -webkit-calc(20px + 20 * ((100vw - 320px) / 2180));
-  font-size: calc(20px + 20 * ((100vw - 320px) / 2180));
+  font-size: -webkit-calc(18px + 22 * ((100vw - 320px) / 2180));
+  font-size: calc(18px + 22 * ((100vw - 320px) / 2180));
 }
 
 .footer {
